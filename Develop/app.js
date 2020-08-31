@@ -20,7 +20,7 @@ function initApp() {
 
 function addMember() {
     inquirer.prompt([{
-        message: "Enter the name of the member of your tem.",
+        message: "Enter the name of the member of your team.",
         name: "name"
     },
     {
@@ -141,7 +141,7 @@ function internQuestions() {
             "Intern"
         );
 
-        employess.push(intern)
+        employes.push(intern)
         addAnother();
     })
 }
@@ -169,7 +169,7 @@ function engineerQuestions() {
             name: "id",
             message: "What is your employee id number?",
         },
-    ]).then(function (internAnswer) {
+    ]).then(function (engineerAnswer) {
         const engineer = new Engineer(
             engineerAnswer.id,
             engineerAnswer.name,
